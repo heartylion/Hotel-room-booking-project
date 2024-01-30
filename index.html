@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Hotel Room Booking</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Hotel Room Booking</h1>
+    <form id="bookingForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="roomType">Room Type:</label>
+      <select id="roomType" name="roomType" required>
+        <option value="standard">Standard Room - $100 per night</option>
+        <option value="deluxe">Deluxe Room - $150 per night</option>
+        <option value="suite">Suite - $200 per night</option>
+      </select>
+
+      <label for="checkIn">Check-in Date:</label>
+      <input type="date" id="checkIn" name="checkIn" required>
+
+      <label for="checkOut">Check-out Date:</label>
+      <input type="date" id="checkOut" name="checkOut" required>
+
+      <button type="button" onclick="submitBooking()">Submit Booking</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
