@@ -26,8 +26,8 @@ function submitBooking() {
           body {
             font-family: 'Arial', sans-serif;
             margin: 20px;
-            background-image: url('background.jpg'); /* Replace 'background.jpg' with your image URL */
-  background-size: cover;
+            background-image: url('background.jpg'); 
+            background-size: cover;
           }
           h2 {
             color: #007BFF;
@@ -49,5 +49,4 @@ function submitBooking() {
     </html>
   `);
 
-  // You can add more logic here, like sending data to the server using AJAX or fetch.
 }
