@@ -1,39 +1,53 @@
 body {
-  font-family: 'Arial', sans-serif;
-  background-image: url('ho2.jpg'); 
+  font-family: Arial, sans-serif;
+  background-image: url('background.jpg'); 
   background-size: cover;
   margin: 0;
   padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  background-color: #f4f4f4;
 }
 
 .container {
+  max-width: 600px;
+  margin: 50px auto;
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-label {
-  display: block;
-  margin-bottom: 8px;
+form, .reviews {
+  margin-bottom: 20px;
 }
 
-input,
-select {
+select, input {
   width: 100%;
   padding: 8px;
+  margin-top: 8px;
   margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.star-rating {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.star-rating span:hover,
+.star-rating span:hover ~ span {
+  color: gold;
 }
 
 button {
-  background-color: #007BFF;
+  background-color: #4caf50;
   color: #fff;
-  padding: 10px;
+  padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
 }

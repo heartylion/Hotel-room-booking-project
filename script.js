@@ -1,3 +1,17 @@
+let selectedRating = 0;
+
+function setRating(event) {
+  const selectedStar = event.target;
+  selectedRating = parseInt(selectedStar.dataset.rating);
+
+  // Highlight selected stars
+  const stars = document.querySelectorAll('.star-rating span');
+  stars.forEach(star => {
+    const rating = parseInt(star.dataset.rating);
+    star.style.color = rating <= selectedRating ? 'gold' : 'gray';
+  });
+}
+
 function submitBooking() {
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
@@ -45,8 +59,19 @@ function submitBooking() {
         <p><strong>Check-in Date:</strong> ${checkIn}</p>
         <p><strong>Check-out Date:</strong> ${checkOut}</p>
         <p><strong>Total Rent:</strong> $${totalRent}</p>
+        <p><strong>Rating:</strong> ${selectedRating} stars</p>
       </body>
     </html>
   `);
+}
 
+function submitReview() {
+  const reviewText = document.getElementById('reviewText').value;
+
+  if (!reviewText || selectedRating === 0) {
+      alert("Please provide both a rating and a review before submitting.");
+  } else {
+      alert(`Thank you for your ${selectedRating}-star review:\n${reviewText}`);
+      // You can implement further logic, like sending the review and rating to a server, etc.
+  }
 }
