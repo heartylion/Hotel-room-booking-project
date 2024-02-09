@@ -40,7 +40,7 @@ function submitBooking() {
           body {
             font-family: 'Arial', sans-serif;
             margin: 20px;
-            background-image: url('images.jpg'); 
+            background-image: url('ho.jpg'); 
             background-size: cover;
           }
           h2 {
