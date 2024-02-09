@@ -1,39 +1,101 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Hotel Room Booking</title>
+  <link rel="stylesheet" href="styless.css">
+  <title>HOTEL INFORMATION</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
+
 <body>
+  <nav
+		class="navbar wpr-mobile-nav-menu-container wpr-mobile-toggle-wrap cursor-hover navbar-expand-lg bg-primary-subtle bg-opacity-25 py-3 text-uppercase sticky-top">
+		<div class="container-fluid ">
+			<p class="navbar-brand fs-6">ELIYAS HOTELS </p>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-6">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="D:\Hotel room booking project\index.html">Home</a>
+					</li>
+					
+					<li class="nav-item">
+						<a class="nav-link" href="D:\Hotel room booking project\customerreview.html">Customer Review</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="D:\Hotel room booking project\contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
 
   <div class="container">
-    <h1>Hotel Room Booking</h1>
-    <form id="bookingForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+    <center><h1><b>Welcome to Our Hotel</b></h1></center>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+    <div class="hotel-info" >
+      <h2><b>ABOUT US</b></h2>
+      <p>Discover the comfort and luxury of our hotel. Located in a prime area, our hotel offers a perfect blend of
+        modern amenities and personalized services.
+        our establishment is designed to provide you with a memorable and indulgent
+        experience. Whether you're a business traveler or a leisure seeker, our hotel offers a perfect blend of
+        sophistication and relaxation.
+        Our carefully curated accommodations boast elegant decor and state-of-the-art amenities, ensuring a stay that
+        transcends expectations. Discover a world of convenience, where every detail is
+        crafted to enhance your comfort.
+        At our hotel, we take pride in delivering impeccable service, making your visit truly special.
+        Join us on a journey of unparalleled hospitality and make your stay an unforgettable moment in
+        our lavish retreat.
+      </p>
 
-      <label for="roomType">Room Type:</label>
-      <select id="roomType" name="roomType" required>
-        <option value="standard">Standard Room - $100 per night</option>
-        <option value="deluxe">Deluxe Room - $150 per night</option>
-        <option value="suite">Suite - $200 per night</option>
-      </select>
+      <h2><b>ACCOMMODATION</b></h2>
+      <p>Indulge in the ultimate comfort of our meticulously designed accommodations. Our hotel offers a variety of room
+        types to suit your preferences and needs. Whether you choose a Standard Room, Deluxe Room, or our opulent Suite,
+        each space is thoughtfully adorned with modern amenities and stylish decor. Immerse yourself in a world of
+        tranquility, where plush furnishings, high-quality linens, and state-of-the-art facilities come together to
+        create an inviting and relaxing atmosphere. Whether you're here for a business trip, a romantic getaway, or a
+        family vacation, our accommodations are tailored to provide a luxurious and memorable stay. Experience the
+        epitome of hospitality as you unwind in the comfort of our well-appointed rooms.
 
-      <label for="checkIn">Check-in Date:</label>
-      <input type="date" id="checkIn" name="checkIn" required>
+      </p>
 
-      <label for="checkOut">Check-out Date:</label>
-      <input type="date" id="checkOut" name="checkOut" required>
+      <h2><b>AMENITIES</b></h2>
+      <ol>
+        <li>Complimentary High-Speed Wi-Fi:
+          Stay connected seamlessly with our complimentary high-speed Wi-Fi, available throughout the premises
+        </li>
+        <li>Inviting Swimming Pool:
+          Immerse yourself in relaxation with our inviting swimming pool, perfect for a refreshing dip or lounging in the sun.
+        </li>
+        <li>Well-Equipped Fitness Center:
+          Maintain your fitness routine with our well-equipped fitness center, featuring state-of-the-art exercise equipment for your convenience.
+        </li>
+        <li>On-Site Restaurant and Bar:
+          Culinary delights await at our on-site restaurant and bar. Enjoy a diverse menu of delectable dishes and expertly crafted beverages in a warm and inviting ambiance.
+        </li>
+        <li>24/7 Room Service:
+          Indulge in our 24/7 room service, ensuring you can savor culinary delights in the comfort of your room at any time.
+        </li>
+      </ol>
 
-      <button type="button" onclick="submitBooking()">Submit Booking</button>
-    </form>
 
-    
+      <a href="D:\Hotel room booking project\BOOKING.html">
+        <button type="button">BookRoom</button>
+      </a>
+    </div>
+  </div>
+
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
+
 </html>
